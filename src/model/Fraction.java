@@ -98,10 +98,6 @@ public abstract class Fraction {
         return Objects.hash(a, b);
     }
 
-    public Fraction copy() {
-        return this;
-    }
-
     public boolean compare(Fraction f) {
         boolean flag;
         int a = this.a, a2 = f.a;
@@ -127,4 +123,7 @@ public abstract class Fraction {
     public abstract Fraction inverse() throws ConstructorException;
 
     public abstract Fraction minus() throws ConstructorException;
+
+    public abstract Fraction copy() throws ConstructorException;
+
 }

@@ -43,6 +43,10 @@ public class SimpleFraction extends Fraction {
         return new SimpleFraction(super.a * super.a, super.b);
     }
 
+    public SimpleFraction copy() {
+        return (SimpleFraction) super.getFraction();
+    }
+
     @Override
     public Fraction inverse() throws ConstructorException {
         return new SimpleFraction(super.b, super.a);

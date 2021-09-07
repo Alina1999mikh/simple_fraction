@@ -100,6 +100,13 @@ public class SimpleFractionTest {
     }
 
     @Test
+    public void testFractionEquals() throws ConstructorException {
+        assertEquals(f, f.copy());
+        assertNotEquals(f, new SimpleFraction(6, 8));
+
+    }
+
+    @Test
     public void testFractionCompare() throws Exception {
         assertFalse(f.compare(new SimpleFraction(10, 6)));
         assertFalse(f.compare(new SimpleFraction(4, 5)));
