@@ -10,7 +10,5 @@ public class Main {
         SimpleFraction F3 = new SimpleFraction("3/9");
         F3.print();
         F3.copy().print();
-
-
     }
 }
